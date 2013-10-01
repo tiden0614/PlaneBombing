@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+	<script src="./lib/dojo/dojo.js" data-dojo-config="async: true"></script>
+</head>
+<body>
+	<div id="container"></div>
+	<script type="text/javascript">
+		require(["gamecontainer","dojo/domReady!"],function(C){
+			var stage = new C({
+				container: "container",
+				width: 2000,
+				height: 2000,
+				visible: true
+			});
+		});
+	</script>
+</body>
